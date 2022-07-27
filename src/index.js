@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <GlobalStyle />
+    <GlobalStyle basename={process.env.PUBLIC_URL} />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/2" element={<Question2 />} />
