@@ -19,8 +19,8 @@ export const GlobalStyle = createGlobalStyle`
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <GlobalStyle basename={process.env.PUBLIC_URL} />
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <GlobalStyle />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/2" element={<Question2 />} />
